@@ -34,7 +34,47 @@
 
 </head>
 <body>
-
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .column {
+      width: 25%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    </style>
 <!-- LOADER -->
 <div id="loader">
   <div class="position-center-center">
@@ -60,6 +100,7 @@
             <li class="scroll"> <a href="#token">Token</a> </li>
             <li class="scroll"> <a href="#activity">Activity</a> </li>
             <li class="scroll"> <a href="#roadmap">Road Map</a> </li>
+            <li class="scroll"> <a href="#team">Team</a> </li>
             <li class="scroll"> <a href="#faq">FAQs</a> </li>
             <li class="scroll"> <a href="#contact">Contact</a> </li>
           </ul>
@@ -166,7 +207,7 @@
             <h3>How To Buy ?</h3>
             <p>1. Create a wallet (e.g., Metamask, Trust wallet)</p>
             <p>2. Fund your Wallet with ETH</p>
-            <p>3. Paste the contract address (0x46005D7AdEd86565dcB4D28bbaa3A5740E4904A3) in PancakeSwap</p>
+            <p>3. Paste the contract address in UniSwap</p>
             <p>4. Swap frame below</p>
             <p>5. Click on swap</p>
             
@@ -310,7 +351,50 @@
         </ul>
       </div>
     </section>
-    
+    <!-- Team Members -->
+    <section class="team style-2 padding-top-150 padding-bottom-150" id="team">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>Our Senior Team Leads </h2>
+          <p></p>
+        </div>
+        <div class="row">
+          <div class="column">
+            
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="./images/omer.jpeg" alt="Jane" style="width:100%;">
+              <div class="container">
+                <br/>
+                <h3>Omer Saleem</h3>
+                <p class="title">CEO & Co-Founder</p>
+                <center><p><a href="https://www.linkedin.com/in/omersaleem91"><img src="./images/Linkedin.png" width="50%" height="50%"></img></a></p>
+                </center>
+              </div>
+            </div>
+          </div>
+        
+          
+          
+          <div class="column">
+            <div class="card">
+              <img src="./images/fahad.jpeg" alt="John" style="width:100%">
+              <div class="container">
+                <br/>
+                <h3>Fahad Rashid</h3>
+                <p class="title">CTO & Co-Founder</p>
+                <center><p><a href="https://www.linkedin.com/in/fahad-rashid-009abb128"><img src="./images/Linkedin.png" width="50%" height="50%"></img></a></p>
+                </center>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Team Members -->
     <section class="light-bg padding-top-150 padding-bottom-150" id="faq">
       <div class="container">
